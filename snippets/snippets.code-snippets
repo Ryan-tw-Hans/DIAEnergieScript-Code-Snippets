@@ -1,0 +1,99 @@
+{
+  "New Calendar object": {
+    "prefix": "New object Calendar",
+    "body": [
+      "set ${1:oCalendar}=createObject(\"DIAEnergieScript.Calendar\")"
+    ],
+    "description": "New Calendar object"
+  },
+  "New Email object": {
+    "prefix": "New object Email",
+    "body": [
+      "set ${1:oEmail}=createObject(\"DIAEnergieScript.Email\")"
+    ],
+    "description": "New Email object"
+  },
+  "New Excel object": {
+    "prefix": "New object Excel",
+    "body": [
+      "set ${1:oExcel}=createObject(\"DIAEnergieScript.Excel\")"
+    ],
+    "description": "New Excel object"
+  },
+  "New File object": {
+    "prefix": "New object File",
+    "body": [
+      "set ${1:oFile}=createObject(\"DIAEnergieScript.File\")"
+    ],
+    "description": "New File object"
+  },
+  "New Log object": {
+    "prefix": "New object Log",
+    "body": [
+      "set ${1:oLog}=createObject(\"DIAEnergieScript.Log\")"
+    ],
+    "description": "New Log object"
+  },
+  "New Math object": {
+    "prefix": "New object Math",
+    "body": [
+      "set ${1:oMath}=createObject(\"DIAEnergieScript.Math\")"
+    ],
+    "description": "New Math object"
+  },
+  "New Operations object": {
+    "prefix": "New object Operations",
+    "body": [
+      "set ${1:oOperations}=createObject(\"DIAEnergieScript.Operations\")"
+    ],
+    "description": "New Operations object"
+  },
+  "New Tags object": {
+    "prefix": "New object Tags",
+    "body": [
+      "set ${1:oTags}=createObject(\"DIAEnergieScript.Tags\")"
+    ],
+    "description": "New Tags object"
+  },
+  "New Excel example(Create Excel object example)": {
+    "prefix": "New example Excel",
+    "body": [
+      "set ${1:oExcel}=createObject(\"DIAEnergieScript.Excel\")",
+      "call ${1:oExcel}.cnfgExcel(\"${2:D:\\Report\\ReportTemplate}.xlsx\",\"${3:Sheet1}\")   'cnfgExcel(strFilePath,strSheetName)",
+      "Result = ${1:oExcel}.SetText(123 , \"C4\")    'SetText(value,cell Name) ; Setting seccess feedback true",
+      "Excel.Save()"
+    ],
+    "description": "New Excel example(Create Excel object example)"
+  },
+  "Excel:Config Excel information": {
+    "prefix": "Excel Config",
+    "body": [
+      "call ${1:oExcel}.cnfgExcel(\"${2:D:\\Report\\ReportTemplate}.xlsx\",\"${3:SheetName}\")"
+    ],
+    "description": "Excel:Config Excel information"
+  },
+  "Excel:Get value by cellName": {
+    "prefix": "Excel getvalue",
+    "body": [
+      "MyVal=${1:oExcel}.GetValue(\"${2:A1}\")  'GetValue(strCellName)"
+    ],
+    "description": "Excel:Get value by cellName"
+  },
+  "Excel:Get value by row and column": {
+    "prefix": "Excel getvalue",
+    "body": [
+      "MyVal=${1:oExcel}.GetValue(${2:3},${3:2})  'GetValue(intRow,intColumn)"
+    ],
+    "description": "Excel:Get value by row and column"
+  },
+  "save excel file": {
+    "prefix": "Excel save",
+    "body": [
+      "${1:oExcel}.Save()"
+    ],
+    "description": "save excel file"
+  }
+
+
+
+}
