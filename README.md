@@ -8,7 +8,7 @@ This extension is still in progress.  [Let me know](https://github.com/Ryan-tw-H
 
 Easy to use DIAEnergieScript library for develop.
 
-
+![](DIAECODESNIPPETS.gif)
 
 ### Snippets (`**/*.vbs`)
 
